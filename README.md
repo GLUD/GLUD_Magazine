@@ -1,2 +1,2 @@
-# articulo-individual-2017
-Plantilla de Artículo Invididual Revista Colibrí GLUD 2017
+# Revista Grupo GNU Linux Universidad Distrital
+Segundo volumen. Año 2017
