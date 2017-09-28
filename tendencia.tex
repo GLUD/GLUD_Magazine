@@ -1,0 +1,163 @@
+% Este fichero es parte del Número 5 de la Revista Occam's Razor
+% Revista Occam's Razor Número 5
+%
+% (c)  2010 The Occam's Razor Team
+%
+% Esta obra está bajo una licencia Reconocimiento 2.5 España de Creative
+% Commons. Para ver una copia de esta licencia, visite 
+% http://creativecommons.org/licenses/by/2.5/es/
+% o envie una carta a Creative Commons, 171 Second Street, Suite 300, 
+% San Francisco, California 94105, USA.
+
+% Este .tex contiene el contenido del articulo
+% Seccion (Dejar en blanco)
+%
+
+% definiciones
+\definecolor{filacolor}{HTML}{E33D00}
+\definecolor{columnacolor}{HTML}{E65B05}
+
+
+\rput(2.5,-2.3){\resizebox{!}{5.7cm}{{\includegraphics[]{images/Importancia/white.eps}}}}
+
+% Cabecera
+\begin{flushright}
+\msection{introcolor}{black}{0.35}{Ingeniería de Software}
+
+\mtitle{10cm}{Tendencias de la Ingeniería de Software en 2017.}
+
+\msubtitle{8cm}{Trends in Software Engineering in 2017.}
+
+{\sf Steven Sierra Forero, Ingeniero de Sistemas}\\
+
+
+{\psset{linecolor=black,linestyle=dotted}\psline(-12,0)}
+\end{flushright}
+
+\vspace{2mm}
+% -------------------------------------------------
+
+\begin{multicols}{2}
+
+\sectiontext{white}{black}{Resumen}
+
+% Introducción
+\intro{introcolor}{E}{ste paper expone de una manera generalizada las tendencias de la ingeniería de software en el 2017, aquí se expondrán los campos más relevantes en el desarrollo de software que están haciendo cambios significativos en los flujos de trabajo de las grandes compañías de desarrollo de software y por ende cambiando la forma en la que accedemos a la tecnología. \\
+Metodologías como las contempladas por Agile, apoyando el desarrollo rápido de aplicaciones, despliegue de software automatizado en la nube con Kubernetes, y el uso intensivo de servicios en la nube como AWS en el ámbito de nubes privadas y empaquetamiento de software a través del uso de tecnologías de contención de software como Docker han sentado un precedente en la actualidad reevaluando constantemente la forma de hacer el delivery de productos de software y cambiando el pensamiento de quienes se involucran en el día a día de la ingeniería de software.
+}
+
+\sectiontext{white}{black}{Palabras clave: }Cloud computing, código abierto, ingeniería, software.
+
+\vspace{5mm}
+
+\sectiontext{white}{black}{I. Introducción}
+
+En la actualidad la ingeniería de software ha tenido que enfrentar diversos cambios adaptándose a la necesidades de la industria, metodologías de planeación, construcción y evaluación del software han sido reevaluadas siguiendo el ritmo de la globalización. \\
+
+A través de un recorrido general sobre el estado del arte de las tendencias en la ingeniería de software, se tratarán temas como el desarrollo de software en el campo del código abierto u open source, el desarrollo y uso de aplicaciones móviles, metodologías como las contempladas por Agile y finalmente computación en la nube, las cuales dan cuenta del avance de la ciencia y la tecnología en el siglo XXI los cuales cuales promueven cambios positivos para el desarrollo de la sociedad.
+
+\vspace{5mm}
+
+\sectiontext{white}{black}{II. OPEN SOURCE}
+
+El software de código abierto ha tenido grandes avances en los últimos años, un referente muy conocido es RedHat, quien tomó el sistema operativo Linux y lo adaptó a las necesidades de un mercado corporativo, haciendo uso de su código de fuente abierta. El código abierto ha evolucionado desde los días en que Microsoft lo etiquetó como \textit{"un destructor de la propiedad intelectual"}, hoy en día una nueva generación de líderes de Microsoft espera que su plataforma Azure basada en Linux (con sus SDKs de código abierto) proporcione un crecimiento significativo a la compañía ya sus clientes. \\
+
+Históricamente la tecnología open source, no ha sido respetada en el sentido de ser malinterpretada como software no estable o software sobre el cual no es viable hacer desarrollos corporativos de gran escala. Sin embargo en la actualidad existen organizaciones como Linux Foundation que tienen proyectos que no solo controlan Linux, sino también Cloud Foundry, el Proyecto Hyperledger (enfocado en la cadena de bloqueo empresarial), la Open Connectivity Foundation (que recientemente se fusionó con la antigua Alianza AllSeen y que se centra en la Internet de las Cosas ), La Fundación JS (centrada en JavaScript).\\
+
+También la fundación Apache (Apache software foundation) mantiene la tradición de código abierto de software libre a través de su estricta licencia con una comunidad bastante activa. Actualmente, Apache tiene más de 180 proyectos, incluyendo nombres conocidos como CloudStack, Hadoop, Cassandra, Groovy, Kafka, Mesos, Maven y Tomcat.\\
+
+
+Según la revista Forbes [3], en el evento anual que se lleva a cabo en los Estados Unidos, donde se exponen las últimas tendencias en el mercado del software de código abierto (open source) algunos de los proyectos más relevantes que se expusieron fueron:\\
+
+
+% Siguiente página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ebOpage{introcolor}{0.35}{Ingeniería de Software}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item Realidad aumentada y Realidad Virtual, esto se evidenció con Pokémon Go un juego para móviles que estremeció el mercado de las aplicaciones móviles con la integración de realidad aumentada y el uso de librerías de código fuente.
+
+\item Inteligencia artificial la cual parecía el material de las películas no hace mucho tiempo. El aprendizaje no  supervisado hecho por la IA es un gran salto en el desarrollo de software. En este año se esperan sistemas que realmente puedan aprender y cambiar su comportamiento, abriendo el camino para dispositivos más inteligentes. Ejemplo de ello son todos los productos que ahora están en el mercado en liderado por los gigantes de la tecnología como Google, Amazon, Apple, Tesla e IBM quienes quieren potenciar el uso de inteligencia artificial en todos los productos de software que hacen parte del diario vivir de los consumidores de servicios digitales [1].
+\end{itemize}
+
+
+
+
+
+\sectiontext{white}{black}{III. APLICACIONES MÓVILES}
+
+Los teléfonos inteligentes se han convertido en una parte inseparable de la vida cotidiana de muchas personas, empezando por la alarma en la mañana, el uso de WhatsApp, la música en la nube en aplicaciones como Spotify, videos en YouTube, correos electrónicos, con Gmail, Yahoo, Outlook, todas	estas	aplicaciones	que	se ejecutan sin problemas desde nuestros dispositivos móviles. Actualmente 2.1 billones de personas en todo el mundo posee un Smartphone, una persona en promedio usa su teléfono unas 264 veces al día, incluyendo textos y llamadas, es un número alto, pero corresponde a una realidad cotidiana en 2017, por lo tanto, el uso de Smartphone y aplicaciones móviles no se va a reducir en 2017 al contrario las tendencias de las aplicaciones para móviles pueden evidenciar nuevos horizontes en el desarrollo de software.\\
+
+Tecnologías como las implementadas por Google en el proyecto AMP (Accelerated Mobile Pages) en donde Google ha anunciado que habrá un índice de búsqueda independiente para la web móvil abre un campo revolucionario que cambia completamente las tendencias de desarrollo de aplicaciones móviles, especialmente desde SEO y la perspectiva de aplicaciones web.
+\\
+Un ejemplo de las aplicaciones móviles desarrolladas en el ámbito corporativo puede ser Evernote a través del cual diferentes equipos en las compañías pueden colaborar en proyectos desde sus dispositivos móviles. Por otro lado, Facebook messenger y aplicaciones de listas de tareas son ejemplos de micro-aplicaciones que están soportando los procesos corporativos de las compañías en 2017.
+
+
+
+
+\sectiontext{white}{black}{IV. METODOLOGÍAS ÁGILES}
+
+En tanto que las metodologías Ágiles y DevOps no desaparecerán de ninguna manera, los líderes de software empresarial pasarán de tener visión de escalar en los procesos ágiles y hacer un esfuerzo  en la integración de profesionales DevOps ampliando la cadena de valor en el delivery de software de punta a punta. En 2017 hay una tendencia generalizada por la adopción de equipos de profesionales DevOps en procesos ágiles lo cual permite una maduración de las organizaciones en la entrega de software a un punto en el que están dispuestos a ver la agilidad de manera holística.\\
+
+A medida que los líderes de software empresarial comienzan a enfocarse en su agilidad empresarial holística y en sus flujos de valor, buscan una solución definitiva en el reto de unificar la planificación estratégica , el desarrollo ágil y la implementación de DevOps.\\
+
+Durante muchos años, las grandes organizaciones empresariales se han centrado en acelerar la entrega escalando ágil. Muchas de estas organizaciones también se han centrado en mejorar la planificación estratégica inicial con prácticas ágiles. En los últimos años estas organizaciones han comenzado a centrarse en los beneficios que DevOps puede tener para la entrega de productos de software en un menor tiempo, lamentablemente, cada una de estas iniciativas se realiza típicamente de forma aislada dando como resultado un esfuerzo fragmentado que no llega a toda la organización.\\
+
+La mayoría de los flujos de valor de las organizaciones empresariales se dividen en tres fases principales [3]: estrategia, desarrollo y entrega. En un flujo de valor fragmentado, cada fase evoluciona en sus propios equipos, procesos, herramientas e información que no están totalmente integrados con el resto del flujo de valor. Esta evolución ha creado un entorno en el que, aunque la adopción ágil y de DevOps es alta, los resultados no satisfacen las expectativas de liderazgo.\\
+
+Una buena cantidad de organizaciones empresariales reconocidas se han esforzado en los últimos años en el mejoramiento del proceso ágil optimizando los flujos de valor de toda la empresa [2].\\
+
+Esta es una transformación importante que no es fácil de lograr. Afortunadamente, la lección aprendida por grandes organizaciones es un punto de partida para otras organizaciones que están empezando en el mercado de la ingeniería de software.\\
+
+% Siguiente página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ebOpage{introcolor}{0.35}{Ingeniería de Software}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\sectiontext{white}{black}{V. CLOUD COMPUTING}
+
+La computación en nube ha reducido drásticamente el costo del despliegue de software. En lugar de necesitar equipos de cómputo y hardware especializado, espacio en el centro de datos,  nómina de administradores de sistemas, el software se puede contratar de los proveedores de nube con unos pocos clics y un costo relativamente bajo por hora. El éxito ya no es un problema, ya sea: construya bien su software y los recursos adicionales de la nube le ayudarán a escalar hacia arriba y hacia abajo según sea necesario. Las pequeñas empresas e incluso los ingenieros de software individuales pueden proporcionar el mismo nivel de servicio en la nube que las grandes empresas.
+El porcentaje de empresas en la actualidad que tienen una estrategia para utilizar despliegue [6] de software en la nubes creció hasta el 85\% (vs 82\% en 2016), con un 58\% de planificación híbrida (vs. 55 por ciento en 2016). También hubo un aumento en el número de empresas que planean múltiples nubes públicas (de un 16\% a un 20\%) y una disminución concurrente en las que planean múltiples nubes privadas (de 11\% a 7\%). En 2017, los desafíos para el despliegue de software en la nube se redujeron en todos los ámbitos, con la excepción de la gobernanza y el control, que se mantuvo estable [3].\\
+
+Como parte de la adopción de los procesos de DevOps para el despliegue de software en la nube, las empresas han optado por implementar nuevas herramientas que les permitan estandarizar y automatizar la implementación y configuración de servidores y aplicaciones. Estas herramientas incluyen herramientas de gestión de configuración (como Chef, Puppet y Ansible),  más recientemente, tecnologías de contenedores, como Docker y orquestación de contenedores y herramientas de programación como Kubernetes, Swarm y Mesosphere.\\
+
+La encuesta sobre el estado de la nube de 2017 realizado por la Cloud Native Computing foundation revela que aunque AWS continúa liderando la adopción de la nube pública (57\% de los encuestados actualmente ejecutan aplicaciones en AWS), este número se ha mantenido plano desde 2016 y 2015. Es importante señalar que mientras que el porcentaje de las empresas que ejecutan al menos una aplicación en AWS es plana, el número de aplicaciones y máquinas virtuales que están ejecutando está aumentando, con lo que el aumento de los ingresos de AWS. El aumento sustancial en el uso de contenedores ahora hace Docker la herramienta de DevOps superior entre los incluidos en nuestra encuesta. La adopción general de Docker subió al 35\%, tomando la ventaja sobre Chef y Puppet en 28\%.\\
+
+La computación en nube ha ayudado a muchas empresas a transformarse en los últimos cinco años, pero los expertos están de acuerdo en que el mercado está entrado en una nueva etapa, tanto para cloud público como para cloud computing construido o alojado en centros de datos corporativos. El mercado de la nube se ve creciendo a un buen ritmo en en 2017 y lo seguirá haciendo medida que las empresas busquen obtener eficiencias a medida que escalan sus recursos computacionales para servir mejor a los clientes.\\
+
+
+Según Dave Bartoletti, "Las empresas con grandes presupuestos, centros de datos y aplicaciones complejas ahora están viendo a cloud como un lugar viable para ejecutar aplicaciones empresariales básicas". Esto se evidencia en las estadísticas entregadas por Amazon donde se evidencia que con la primera ola de cloud computing creada como Amazon Web Services, en 2006 ha dado utilidades por más de 11.000 millones de dólares.\\
+
+
+\bibliographystyle{abbrv}
+\begin{bibliografia}
+\bibitem{ref1}
+\href{http://insights.dice.com/trends/}{insights.dice.com}
+\bibitem{ref2}
+\href{https://www.oreilly.com/ideas/5-software-development-trends-shaping- enterprise}{www.oreilly.com}
+\bibitem{ref3}
+\href{https://forbes.com}{forbes.com}
+\bibitem{ref4}
+Barry W. Boehm. Get ready for the agile methods, with care. IEEE Computer, 35(1):64–69, Jan 2002.
+\bibitem{ref5}
+Alan C. Wills. Agile components. Technical report, Trireme International	Ltd,	Feb	2002. \href{http://www.ltt.de/otland/experts/a.c.wills.shtml}{www.ltt.de}
+\bibitem{ref6}
+Mihaly Csikszentmihalyi. Flow: The Psychology of Optimal Experience. Harper Perennial Modern Classics. 2008.
+\bibitem{ref7}    
+Jeannette M. Wing. Computational thinking. Communications of the ACM, March 2006. Page 33- 35.
+\end{bibliografia}
+
+
+\begin{biografia}{images/Importancia/white.eps}{Steven Sierra Forero} Estudiante de Ingeniería de Sistemas, Universidad Distrital Francisco José de Caldas.\\ssierraf@correo.udistrital.edu.co
+\end{biografia}
+
+\raggedcolumns
+\pagebreak
+
+
+\end{multicols}
+
+\clearpage
+\pagebreak

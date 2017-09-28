@@ -81,9 +81,19 @@ Con esto claro se entienden ya los alcances de este escrito y se quiere dejar en
 Antes de desarrollar los contenidos, me parece necesario decir porque se cree tener el criterio necesario para escribir este artículo. Desde hace un tiempo existe la emisora en línea del GLUD, esta emisora se llama ``Radio GLUD'', y desde sus comienzos ha dado valioso conocimiento a todo el grupo con el cual se han solucionado algunos problemas con soluciones definitivas o parciales en que a pesar de todo el trabajo invertido hasta ahora, todavía falta un camino largo por recorrer para acercarla lo más posible a lo que puedan imaginar nuestras mentes.
 La invitación cordial va a que visiten el sitio web de este proyecto \url{http://glud.udistrital.edu.co/radioglud}
 
+% Siguiente página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ebOpage{introcolor}{0.35}{Tecnologías libres}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \sectiontext{white}{black}{II. ¿Por qué una radio en línea?}
 
-Es una pregunta que se hizo a su debido momento, por lo general se presentan muchas cosas a favor y otras en contra, pero las razones más valiosas que se encontraron fueron positivas y más enfocadas en {\em impacto social} que en cuestiones técnicas. La madre de todas es el poder social que se presenta cuando las personas comparten algo, pero ¿cuál era el medio correcto para compartir?; la radio es nuestro ancestro más cercano (para comunicarnos), todavía vivo, más interesante y nos ofrece las siguientes ventajas derivadas del poder social.
+Es una pregunta que se hizo a su debido momento, por lo general se presentan muchas cosas a favor y otras en contra, pero las razones más valiosas que se encontraron fueron positivas y más enfocadas en {\em impacto social} que en cuestiones técnicas. 
+
+
+
+La madre de todas es el poder social que se presenta cuando las personas comparten algo, pero ¿cuál era el medio correcto para compartir?; la radio es nuestro ancestro más cercano (para comunicarnos), todavía vivo, más interesante y nos ofrece las siguientes ventajas derivadas del poder social.
 
 El primero de ellos es {\em el sentido de comunidad}, que se crea cuando muchas personas trabajan por una misma causa y es conocido que es mucho mas fácil hacer un programa radial que uno televisivo; el segundo es {\em compartir ideas y sentimientos}, que se ha visto mucho en otras radio, pero ¿realmente son las que nos interesan en la comunidad académica?; la tercera es {\em las experiencias que se adquieren}, no puede ser solo libros, pueden haber otros espacios de esparcimiento muy provechosos; el cuarto es {\em compartir gustos musicales}, que hace que estemos más unidos, o ¿quién no ha cantado una canción que a todo mundo le gusta con un grupo de amigos?; y la última, {\em la creatividad como reflejo de sociedad}, tenemos derecho a expresarnos y nos volvemos más creativos (A mi parecer) solo mostrando nuestra voz que nuestros rostros.
 
@@ -106,12 +116,21 @@ La transmisión de medios específicamente de audio, representa la acción esenc
 
 El streaming (que se refiere a corriente continua) es la distribución de contenido multimedia a través de una red de computadores con la ventaja de que por medio de un búfer de datos se agrega la posibilidad de disfrutar el contenido mientras este descarga; el componente búfer de datos en este caso es un espacio de memoria que almacena datos para evitar que la reproducción del medio se quede sin información durante la transferencia.
 
+
 Latencia (relay - retardo del reloj) es el tiempo o retardos temporales en que se realiza un proceso o procesos (o en su defecto ninguno) debido por lo general al tiempo de propagación de los circuitos o incluso al tiempo en que se estabiliza que es debido a la densidad del material y la temperatura principalmente.
 
 \begin{center}
 \resizebox{8cm}{!}{{\epsfbox{images/radioglud/latencia.eps}}}
 \mycaption{Gráfico de un sistema intermedio (sistema 2) donde se muestra que existe un tiempo desde que los datos entran hasta que salen del sistema y los causales posibles de ese Delta}
 \end{center}
+
+
+% Siguiente página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ebOpage{introcolor}{0.35}{Tecnologías libres}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 \begin{center}
 \resizebox{8cm}{!}{{\epsfbox{images/radioglud/propagacion.eps}}}
@@ -136,6 +155,15 @@ Ya que introducimos los bitrates y las velocidades de conexión de la red, es ne
 Source Stream (fuente) es entendido como la fuente de audio (o vídeo) de donde se obtienen los datos para despues distribuirlos en la red en forma de streaming, este fuente se genera desde un cliente como ices o idjc de los que se hablará más adelante.
 
 Mount Point (Punto de Montaje) es una ruta por la cual se puede acceder a determinado streaming, debe ser configurada en el servidor de streaming, un ejemplo de un punto de montaje es ``/radioglud.ogg'' y para acceder a él desde un navegador web o un reproductor de audio la dirección se escribe de la forma http://ip:puerto/radioglud.ogg, no hay que preocuparse si no se ha entendido del todo ya que al hacer nuestro proceso de streaming en localhost el concepto llega sin mucho esfuerzo.
+
+
+% Siguiente página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ebOpage{introcolor}{0.35}{Tecnologías libres}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 
 También vale la pena saber algunos conceptos de envío de información conocidas como {\em formas de transmisión de información} en una red, en lo que se consideran 3 como los principales conceptos, hay que decir que existen más pero éstos son los más relevantes y usados, el primero es {\em unicast} que consiste en que se envía la información uno a uno, donde obtiene la información el que lo necesita a través de requerimientos; el siguiente es {\em multicast} que necesita un rango de IPs ya reglamentado (conocidas como tipo D) para enviar simultáneamente los datos a todos los destinos escogidos a los que se les conoce como grupo multidifusión, no necesita enviar la información a cada destino por petición, sino que realiza una única transmisión de los fuentes a cada uno de los destinos y por eso no necesita una red con gran velocidad para realizar las transferencias; y el último de los tres es la forma {\em broadcast} que es parecido al anterior con la diferencia que se envía los datos a todos los puntos de la red o subred simultáneamente.
 
@@ -166,9 +194,17 @@ A continuación se listan las aplicaciones que se han usado en Radio GLUD a trav
 {\em {\color{introcolor}{Jack Audio Connection Kit}} multiplataforma y lo mejor que el software libre ha podido hacer por el mundo de la música.}
 \end{entradilla}
 
+
+% Siguiente página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ebOpage{introcolor}{0.35}{Tecnologías libres}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \sectiontext{white}{black}{Alternativas para emisión de audio y ventajas y desventajas de estas}
 
 Son muchas las aplicaciones que se utilizan en el entorno comercial para la emisión de medios, aunque contamos con pocas opciones de software libre, todas son de gran calidad y muy estables. Se listan las alternativas privativas que conozco como para dar ciertas observaciones al respecto, las que no conozco debido a que nunca las he usado, ni escuchado, ni desearía hacerlo aparecen con un ``--''.
+
+
 
 
 \begin{center}
@@ -186,7 +222,7 @@ QjackCtl & --\\ \hline
 JACK Rack & --\\ \hline
 JAMin & Winamp\\ \hline
 liquidsoap & --\\ \hline
-jme (Reproductor HTML5) & Reproductor en Flash\\ \hline
+jme (Reproductor HTML5)& Reproductor en Flash\\ \hline
 WebcamStudio & WebcamMax\\ \hline
 \end{tabular}
 \caption{Equivalentes lo más parecido posible a las herramientas libres}
@@ -194,9 +230,9 @@ WebcamStudio & WebcamMax\\ \hline
 \end{center}
 
 
-Hace algún tiempo vi una conferencia en el CPCO4 (Campus Party Colombia), la verdad no recuerdo el nombre de la persona y no la encontré por la web por eso no la cito, en esta se enseńó como hacer una emisora online con software privativo. Algunas de las quejas del expositor en la conferencia eran, ``shoutcast solo funciona con winamp''; ``winamp solo trabaja con la tarjeta de audio escogida como principal''; ``la configuración de archivos de texto con notepad es feo (eso puede ser debido a que pone el texto todo de un solo color y posiblemente no se aprecia la indentación como debe ser)'' y dijo también ``estoy más perdido que el hijo de limber'' y por las constantes fallas en el proceso decía ``eso le pasa al chavo, al coyote y a mí''. Mis observaciones fueron que el equipo se colgaba fácilmente, la razón es que posiblemente el software era muy pesado, empezando por el sistema operativo.
+Hace algún tiempo vi una conferencia en el CPCO4 (Campus Party Colombia), la verdad no recuerdo el nombre de la persona y no la encontré por la web por eso no la cito, en esta se enseńó como hacer una emisora online con software privativo. Algunas de las quejas del expositor en la conferencia eran, ``shoutcast solo funciona con winamp''; ``winamp solo trabaja con la tarjeta de audio escogida como principal''; ``la configuración de archivos de texto con notepad es feo (eso puede ser debido a que pone el texto todo de un solo color y posiblemente no se aprecia la indentación como debe ser)'' y dijo también ``estoy más perdido que el hijo de limber'' y por las constantes fallas en el proceso decía ``eso le pasa al chavo, al coyote y a mí''. Mis observaciones fueron que el equipo se colgaba fácilmente, la razón es que posiblemente el software era muy pesado, empezando por el sistema operativo.\\
 
-Una de las cosas que si se hacían bien con el software privativo era cuando usaba herramientas como oddcast y zararadio aunque en sus versiones gratis poseen algunas limitaciones en cuanto a funcionalidad. Otra aplicación que usaba era WebcamMax que sirve para generar un fuente de vídeo con imágenes u otros vídeos para posteriormente unirla con el audio y enviarla a un canal en {\em ustream}, buscando un rato en la web encontré la alternativa libre {\em WebcamStudio} aunque por estar escrita para Java 1.6 ha resultado hasta el momento imposible hacerlo funcionar con nuevas versiones de Java, solo queda esperar a que la versión alpha siga desarrollándose y llegue a ser estable.
+Una de las cosas que si se hacían bien con el software privativo era cuando usaba herramientas como oddcast y zararadio aunque en sus versiones gratis poseen algunas limitaciones en cuanto a funcionalidad. Otra aplicación que usaba era WebcamMax que sirve para generar un fuente de vídeo con imágenes u otros vídeos para posteriormente unirla con el audio y enviarla a un canal en {\em ustream}, buscando un rato en la web encontré la alternativa libre {\em WebcamStudio} aunque por estar escrita para Java 1.6 ha resultado hasta el momento imposible hacerlo funcionar con nuevas versiones de Java, solo queda esperar a que la versión alpha siga desarrollándose y llegue a ser estable.\\
 
 Queda rescatar que tu libertad está sobre todas las cosas, así que aunque algunas veces el software privativo sea más funcional no hay que usarlo porque luego te esclavizaras a los desarrolladores de dicha herramienta.
 
@@ -204,7 +240,7 @@ Queda rescatar que tu libertad está sobre todas las cosas, así que aunque algu
 \sectiontext{white}{black}{VI. ¿Qué música puedo poner?, licencias asociadas}
 
 
-Cuando hacemos nuestra propia emisora en línea es necesario conocer algunas leyes colombianas e internacionales que nos impiden poner música de cualquier tipo sin considerar que existen los derechos de autor (patrimoniales y conexos) y que hay que posiblemente pagar por ellos a un ente recaudador de derechos como Sayco y Acinpro (al parecer va a ser cambiada por otro ente debido a la corrupción del mismo), de lo contrario se está cometiendo un delito.
+Cuando hacemos nuestra propia emisora en línea es necesario conocer algunas leyes colombianas e internacionales que nos impiden poner música de cualquier tipo sin considerar que existen los derechos de autor (patrimoniales y conexos) y que hay que posiblemente pagar por ellos a un ente recaudador de derechos como Sayco y Acinpro (al parecer va a ser cambiada por otro ente debido a la corrupción del mismo), de lo contrario se está cometiendo un delito.\\
 Los derechos de autor tienen distintas clases, entre los que interesan para el desarrollo de la pregunta están:
 \begin{itemize}
 \item Los derechos Morales: son los derechos ligados al autor y perduran por la eternidad, estos derechos son irrenunciables e imprescriptibles (ni ceder, vender o transferir).
@@ -229,20 +265,27 @@ Bogotá 		& E & 3 & \$1.133.400 \\ \hline
 \end{tablehere}
 \end{center}
 
-Tal vez para una emisora libre de publicidad o una emisora estudiantil, sería muy difícil invertir recursos para la música y tener que suspender el uso de piezas musicales cuando es bien conocido que la música (ver arriba los argumentos) hace parte importante del proceso de comunidad que es lo que se busca en un grupo como GLUD.
+% Siguiente página
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ebOpage{introcolor}{0.35}{Tecnologías libres}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Tal vez para una emisora libre de publicidad o una emisora estudiantil, sería muy difícil invertir recursos para la música y tener que suspender el uso de piezas musicales cuando es bien conocido que la música (ver arriba los argumentos) hace parte importante del proceso de comunidad que es lo que se busca en un grupo como GLUD.\\
 
 Existen algunos tipos de productos musicales debidos al cumplimiento de los derechos anteriormente nombrados y que se podrán utilizar en nuestra emisora teniendo en cuenta que uso es el que se le va a dar
 \begin{itemize}
 \item Música libre: Es la música que cumple los mismos principios del software libre.
 \item Música con algunos derechos reservados: Es la música que no permiten las libertades de obra derivada y/o uso comercial.
 \end{itemize}
-Dentro de la música que se puede usar está la de Dominio Público, mucha de la mejor música del planeta se encuentra bajo esta licencia, entre ellas obras de arte como la música clásica; también encontramos piezas de audio que el autor ha decidido registrar con licencias como Creative Commons, Coloriuris o ArtLibre.
 
-Las licencias más usadas actualmente para contenidos libres o semilibres son las Creative Commons que son 6 licencias que surgen de la conjugación de las características o funciones que son, Atribución (by), No comercial (nc), Sin derivar (nd) y Compartir igual (sa). Las licencias libres\cite {ref2} son CC-by y CC-by-sa, las otras 4 que son CC-by-nd, CC-by-nc, CC-by-nd-nc y CC-by-nc-sa son las que se consideran semi-libres o con algunos derechos reservados. Pueden buscar su licencia ideal en la dirección \url{http://creativecommons.org/choose/} y posteriormente poner los meta-datos en tu sitio web.
+Dentro de la música que se puede usar está la de Dominio Público, mucha de la mejor música del planeta se encuentra bajo esta licencia, entre ellas obras de arte como la música clásica; también encontramos piezas de audio que el autor ha decidido registrar con licencias como Creative Commons, Coloriuris o ArtLibre.\\
 
-Estas licencias CC (Creative Commons) según cuenta la historia surgió debido a la aparición del Internet (hay que darse cuenta la importancia de esta en lo que que consideramos que es la libertad por lo menos en la tecnología) y el espíritu de compartir que hicieron que una persona Eric Eldred fuera subiendo a la red obras que quedaban en Dominio Público cada año, en la escena apareció Mary Bono viuda de Sonny Bono un actor estadounidense que quería que los derechos de autor durarán para siempre, y luego de su muerte, Mary Bono tomó el cargo que él tenía en la cámara de representantes y comenzó a promover lo que ella consideraba la última voluntad de su marido.
+Las licencias más usadas actualmente para contenidos libres o semilibres son las Creative Commons que son 6 licencias que surgen de la conjugación de las características o funciones que son, Atribución (by), No comercial (nc), Sin derivar (nd) y Compartir igual (sa). Las licencias libres\cite {ref2} son CC-by y CC-by-sa, las otras 4 que son CC-by-nd, CC-by-nc, CC-by-nd-nc y CC-by-nc-sa son las que se consideran semi-libres o con algunos derechos reservados. Pueden buscar su licencia ideal en la dirección \url{http://creativecommons.org/choose/} y posteriormente poner los meta-datos en tu sitio web.\\
 
-Todo este lío resulta ser anticonstitucional pero igual se aumentó los ańos que se protegía el derecho patrimonial del autor, situación que causó descontento (para Eric Eldred y sus seguidores) ya que para ese ańo y otros venideros no habría liberación de obras; en esté dilema aparece Lawrence Lessig con un argumento contundente ``en la constitución de USA decía que se garantizaba el derecho monopólico por un tiempo limitado para asegurar y promover el progreso'', hubieron discusiones hasta que lo denominado ``The Mickey Mouse Protection Act''\cite {ref3} impuso con su poderío una influencia lo bastante grande para que el tiempo del derecho patrimonial se extendiera sin regulación aparente cada vez que llegaba la hora de que Mickey Mouse pasara a dominio público\cite {ref4} en 1976 decidieron parar estos cambios casi anuales. 
+Estas licencias CC (Creative Commons) según cuenta la historia surgió debido a la aparición del Internet (hay que darse cuenta la importancia de esta en lo que que consideramos que es la libertad por lo menos en la tecnología) y el espíritu de compartir que hicieron que una persona Eric Eldred fuera subiendo a la red obras que quedaban en Dominio Público cada año, en la escena apareció Mary Bono viuda de Sonny Bono un actor estadounidense que quería que los derechos de autor durarán para siempre, y luego de su muerte, Mary Bono tomó el cargo que él tenía en la cámara de representantes y comenzó a promover lo que ella consideraba la última voluntad de su marido.\\
+
+Todo este lío resulta ser anticonstitucional pero igual se aumentó los ańos que se protegía el derecho patrimonial del autor, situación que causó descontento (para Eric Eldred y sus seguidores) ya que para ese ańo y otros venideros no habría liberación de obras; en esté dilema aparece Lawrence Lessig con un argumento contundente ``en la constitución de USA decía que se garantizaba el derecho monopólico por un tiempo limitado para asegurar y promover el progreso'', hubieron discusiones hasta que lo denominado ``The Mickey Mouse Protection Act''\cite {ref3} impuso con su poderío una influencia lo bastante grande para que el tiempo del derecho patrimonial se extendiera sin regulación aparente cada vez que llegaba la hora de que Mickey Mouse pasara a dominio público\cite {ref4} en 1976 decidieron parar estos cambios casi anuales. \\
 
 Mickey Mouse ahora se esconde bajo una marca registrada que impide usarlo por ser prácticamente el logo de la compańía The Walt Disney Company y en el transcurso de todo esto Lawrence Lessig creó lo que actualmente es la organización sin fines de lucro Creative Commons como oposición directa al copyright.
 
@@ -260,7 +303,9 @@ Mickey Mouse ahora se esconde bajo una marca registrada que impide usarlo por se
 
 \begin{multicols}{2}
 
-Como se puede ver el método (ha de entenderse método como el esquema general o a grandes rasgos de la gestión, configuración y flujo del audio) implementado hasta ahora no incluye el uso de liquidsoap, y hay dos fuentes (generada por IDJC) y 2 puntos de montaje con baja (64 kbps) y alta (128 kbps) calidad de sonido (configurando el bitrate de las fuentes en IDJC) en el formato ogg vorbis, Se recomienda hacer bien los cálculos para que se pueda dar la suficiente calidad si son pocos o muchos los usuarios.\cite{ref5} La desventaja de éste es que claramente no hay un sistema de respaldo y en caso de que el IDJC falle, nuestro punto de montaje desaparecerá, se recomienda tener otros fuentes que deberían ser administrados a través de liquidsoap.
+
+
+Como se puede ver, el método (ha de entenderse método como el esquema general o a grandes rasgos de la gestión, configuración y flujo del audio) implementado hasta ahora no incluye el uso de liquidsoap, y hay dos fuentes (generada por IDJC) y 2 puntos de montaje con baja (64 kbps) y alta (128 kbps) calidad de sonido (configurando el bitrate de las fuentes en IDJC) en el formato ogg vorbis, Se recomienda hacer bien los cálculos para que se pueda dar la suficiente calidad si son pocos o muchos los usuarios.\cite{ref5} La desventaja de éste es que claramente no hay un sistema de respaldo y en caso de que el IDJC falle, nuestro punto de montaje desaparecerá, se recomienda tener otros fuentes que deberían ser administrados a través de liquidsoap.
 
 \begin{entradilla} %codigo para una entradilla
 {\em {\color{introcolor}{``Aquel que sacrifica la libertad por seguridad, no merece ninguna de las dos''}} -- Benjamin Franklin}
